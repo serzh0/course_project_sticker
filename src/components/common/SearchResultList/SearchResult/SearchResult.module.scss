@@ -1,0 +1,19 @@
+@import '../../../../assets/styles/vars.scss';
+
+.result-item {
+  margin-top: 40px;
+  width: 60%;
+  & h3, p {
+    margin-bottom: 24px;
+  }
+  & a:hover h3{
+    color: $blue-color;
+  }
+  & p {
+    color: $darkgray-color;
+  }
+
+  & span {
+    color: $gray-color;
+  }
+}

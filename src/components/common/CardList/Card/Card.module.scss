@@ -1,0 +1,58 @@
+@import '../../../../assets/styles/vars.scss';
+
+
+.card {
+  box-shadow: 0px 8px 36px rgba(42, 47, 55, 0.06);
+  border-radius: 0px 0px 4px 4px;
+  &:hover {
+    box-shadow: 0px 8px 36px rgba(42, 47, 55, 0.16);
+  }
+  &__photo {
+    position: relative;
+    & span {
+      position:absolute;
+      bottom: 16px;
+      left: 16px;
+      background: $blue-color;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: $white-color;
+    }
+  & img {
+    display: block;
+    width: 100%;
+  }
+
+  }
+
+  &__info {
+    padding: 24px;
+    & p {
+      margin-top: 16px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: $darkgray-color;
+    }
+  }
+  &__price {
+    display: flex;
+    justify-content: right;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.4;
+    font-size: 14px;
+  }
+  &__view {
+    display: flex;
+    align-items: center;
+    & span {
+      margin-left: 8px;
+    }
+  }
+}

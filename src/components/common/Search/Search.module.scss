@@ -1,0 +1,31 @@
+@import '../../../assets/styles/vars.scss';
+
+.search-form {
+  position: relative;
+  & img {
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 8px;
+  }
+
+  & input {
+    width: 565px;
+    height: 36px;
+    border: 1px solid $blue-color;
+    border-radius: 4px;
+  }
+}
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 36px;
+  background: $blue-color;
+  color: $white-color;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0px 4px 4px 0px;
+  padding: 6px 26px;
+}

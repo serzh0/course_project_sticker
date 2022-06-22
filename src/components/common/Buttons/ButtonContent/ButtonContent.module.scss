@@ -1,0 +1,21 @@
+@import '../../../../assets/styles/vars.scss';
+
+.btn-content {
+  // border: 1px solid #ffffff;
+  height: 40px;
+  padding: 10px 24px;
+  margin: 0;
+  &:hover {
+    cursor: pointer;
+    // border: 1px solid #4877F2;
+    color: $blue-color;
+    outline:1px solid $blue-color;
+    border-radius: 35px;
+  }
+  &:active {
+    color: $title-color;
+    background: #FFAC28;
+    border-radius: 35px;
+    outline: none;
+  }
+}

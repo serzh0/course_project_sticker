@@ -1,0 +1,62 @@
+@import 'normalize';
+@import 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap');
+
+.container {
+  max-width: 1330px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body {
+  color: $darkgray-color;
+  font-family: $text-fonts;
+  font-size: $text-size;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $title-color;
+  font-family: $text-fonts;
+}
+
+h1 {
+  font-size: $h1-size;
+}
+h2 {
+  font-size: $h2-size;
+}
+h3 {
+  font-size: $h3-size;
+}
+a {
+  color: $title-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+// .active {
+//   color: green;
+// }

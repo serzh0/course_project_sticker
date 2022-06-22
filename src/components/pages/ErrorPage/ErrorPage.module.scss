@@ -1,0 +1,21 @@
+@import '../../../assets/styles/vars.scss';
+
+.section-error {
+  margin-top: 40px;
+  margin-bottom: 430px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & h2 {
+    margin-bottom: 32px;
+  }
+  & p {
+    color:$darkgray-color;
+  }
+  & .text-error {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+}

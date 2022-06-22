@@ -1,26 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GetPasswordContainer from './containers/GetPasswordContainer';
+// import AuthContainer from './containers/AuthContainer';
+// import RegistrationContainer from './containers/RegistrationContainer';
+// import ErrorContainer from './containers/ErrorContainer';
+// import SearchResultContainer from './containers/SearchResultContainer';
+// import AuthContainer from './containers/AuthContainer';
+// import MainContainer from './containers/MainContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => <GetPasswordContainer />;
 
 export default App;
