@@ -1,0 +1,111 @@
+@import '../../../assets/styles/vars.scss';
+
+.section-profile {
+  margin-top: 40px;
+  margin-bottom: 250px;
+  & button {
+    padding: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__navigate {
+    width: 20%;
+    &-control, &-user {
+      padding: 24px;
+      display: flex;
+      .user-text {
+        display: grid;
+        margin-left: 16px;
+        .user-admin {
+          font-weight: 700;
+        }
+        .user-rules {
+          font-size: 14px;
+          color: $gray-color;
+        }
+      }
+      .navigate-button {
+        &__ads, &__exit {
+          margin-left: 12px;
+        }
+      }.btn-active {
+        color: $blue-color;
+      }
+
+    }
+    &-control { 
+      border-top: 1px solid $lightgray-color;
+    }
+    .navigate-active {
+      position:relative;
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 14px;
+        left: 0px;
+        width: 2px;
+        height: 40px;
+        background: $blue-color;
+      }
+    }
+  }
+  &__ads {
+    width: 75%;
+    & .ads-header, .ads-control, .ads-control__settings, .ads-control__pagination {
+      display: flex;
+      justify-content: space-between;
+      // хз насчёт строки ниже
+      align-items: center;
+    }
+
+    & .ads-header{
+      margin-bottom: 40px;
+      &__text h2{
+        margin-bottom: 8px;
+      }
+    }
+
+    & .ads-control {
+      margin-bottom: 24px;
+      &__search {
+        position: relative;
+        margin-right: 12px;
+      }
+      &__btn-search {
+        position: absolute;
+        padding: 0;
+        top: 8px;
+        right: 16px;
+      } 
+      &__input {
+        padding: 8px 50px 8px 16px;
+        width: 420px;
+        height: 40px;
+        border: none;
+        box-shadow: 0px 8px 36px rgba(42, 47, 55, 0.08);
+      }
+      &__btn-filter {
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        background: $lightgray-color;
+        & img {
+          margin-left: 16px;
+        }
+      }
+      & .ads-control__arrow button{
+          margin-left: 16px;
+      }
+    }
+    & .ads-columns__header {
+      padding: 12px 92px 12px 24px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 0 10px;
+    }
+  }
+}
+

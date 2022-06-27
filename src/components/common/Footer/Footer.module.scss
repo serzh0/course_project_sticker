@@ -1,8 +1,10 @@
 @import '../../../assets/styles/vars.scss';
 
+@import '../../../assets/styles/vars.scss';
+
 .page-footer {
   padding: 50px 0;
-  background: #F2F2F2;
+  background: $lightgray-color;
   margin-bottom: 80px;
   &__wrapper {
     display: flex;
