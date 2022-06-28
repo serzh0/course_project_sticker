@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import style from './Footer.module.scss';
 
 const Footer = () => (
@@ -5,11 +6,11 @@ const Footer = () => (
     <div className="container">
       <div className={style['page-footer__wrapper']}>
         <div className={style['page-footer__logo']}>
-          <a href="#!">
+          <Link to="/">
             <img src="images/logo.svg" alt="logo" />
-          </a>
+          </Link>
           <div />
-          <a href="#!">Доска объявлений</a>
+          <Link to="/">Доска объявлений</Link>
         </div>
         <a className={style['page-footer__copyright']} href="#!">
           © ООО «Доска диджитал», 2022

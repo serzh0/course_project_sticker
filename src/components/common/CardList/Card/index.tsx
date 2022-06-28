@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import style from './Card.module.scss';
+import { data } from '../../../../helpers';
 
 type CardPropsType = {
   imgSource: string;
@@ -8,6 +10,7 @@ type CardPropsType = {
   price: string;
   date: string;
   view: string;
+  id: string;
   // children: React.ReactNode;
 };
 
@@ -19,10 +22,10 @@ const Card = ({
   price,
   date,
   view,
-}: // children,
-CardPropsType) => (
+  id,
+}: CardPropsType) => (
   <li className={style.card}>
-    <a href="#!" className={style.card__wrapper}>
+    <Link to={id} className={style.card__wrapper}>
       <div className={style.card__photo}>
         <img src={imgSource} alt="card-img" />
         <span className={style.card__category}>{category}</span>
@@ -39,7 +42,7 @@ CardPropsType) => (
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   </li>
 );
 

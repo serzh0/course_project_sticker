@@ -1,6 +1,92 @@
+@import "../../../assets/styles/vars.scss";
 .section-ad {
   &__wrapper {
     display: flex;
     justify-content: space-between;
   }
+
+  &__main {
+    width: 65%;
+  }
+  &__date {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    & span {
+      padding: 8px 24px 8px 16px;
+      background: $lightgray-color;
+    }
+  }
+  &__title {
+    margin-bottom: 25px;
+  }
+  &__id {
+    color: $darkgray-color;
+    margin-bottom: 20px;
+  }
+  &__view {
+    color: $gray-color;
+    & span {
+      display: flex;
+      align-items: center;
+      & img {
+        margin-right: 6px;
+      }
+    }
+  }
+  &__images {
+    margin-bottom: 35px;
+  }
+  &__images-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px 25px;
+  }
+  &__images-item, &__img--big {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__img--big {
+    grid-column: span 4;
+  }
+
+  &__description, &__location {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__description p {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+  &__secondary {
+    width: 25%;
+    margin-top: 90px;
+  }
+  &__price {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  &__get-number {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: $white-color;
+    background: $blue-color;
+    border-radius: 4px;
+  }
+
+  &__other-ads {
+    margin-top: 75px;
+    .other-ads__item {
+      margin-top: 30px;
+      & div {
+        margin-top: 10px;
+      }
+    }
+  }
+
 }
