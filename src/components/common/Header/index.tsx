@@ -11,9 +11,9 @@ const Header = () => (
         <img src="images/logo.svg" alt="logo" />
       </Link>
       <Search />
-      <a className={style['add-ad']} href="#!">
+      <Link to="/profile-ads" className={style['add-ad']}>
         Подать объявление
-      </a>
+      </Link>
       <div className={style['page-header__login']}>
         <img src="images/login.svg" alt="login" />
         <Link to="/auth">Войти</Link>

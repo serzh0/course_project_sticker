@@ -66,6 +66,13 @@
       &__text h2{
         margin-bottom: 8px;
       }
+      .ads-header__btn {
+        padding: 8px 16px;
+        color: $white-color;
+        font-size: 14px;
+        background-color: $blue-color;
+        border-radius: 4px;
+      }
     }
 
     & .ads-control {

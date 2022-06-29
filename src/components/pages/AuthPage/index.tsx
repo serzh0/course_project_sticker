@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 // import { Form, Input } from 'antd';
 import Form from '../../common/Form';
 import Input from '../../common/Form/Input';
@@ -9,19 +10,15 @@ const AuthPage = () => (
     <div className={style['section-auth__wrapper']}>
       <div className={style['section-auth__window']}>
         <h3>Hello, world!</h3>
-        <span>Пройдите авторизацию</span>
+        <span className={style['section-auth__description']}>Пройдите авторизацию</span>
         <div className={style['section-auth__control']}>
-          <button className={style['section-auth__btn-reg']} type="button">
-            Регистрация
-          </button>
-          <button className={style['section-auth__btn-auth']} type="button">
-            Авторизация
-          </button>
+          <Link to="/reg">Регистрация</Link>
+          <Link to="/auth">Авторизация</Link>
         </div>
         <Form>
           <Input title="Email" id="1" placeholder=" " />
           <Input title="Пароль" id="1" placeholder=" " type="password" />
-          <a href="#!">Забыли пароль?</a>
+          <Link to="/get-pass">Забыли пароль?</Link>
           <button className={style['section-auth__submit']} type="submit">
             Войти
           </button>

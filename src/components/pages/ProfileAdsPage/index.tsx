@@ -41,8 +41,10 @@ const ProfileAdsPage = () => (
             <h2>Объявления</h2>
             <span>Всего: 45</span>
           </div>
-          <div className={style['ads-header__btn']}>
-            <button type="button">Добавить +</button>
+          <div className={style['ads-header__btn-wrapper']}>
+            <button className={style['ads-header__btn']} type="button">
+              Добавить +
+            </button>
           </div>
         </div>
         <div className={style['ads-control']}>

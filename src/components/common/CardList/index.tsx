@@ -5,7 +5,7 @@ type CardListPropsType = {
   children: React.ReactNode;
 };
 
-const CardList: React.FC<CardListPropsType> = ({ children }) => (
+const CardList = ({ children }: CardListPropsType) => (
   <ul className={style['card-list']}>{children}</ul>
 );
 

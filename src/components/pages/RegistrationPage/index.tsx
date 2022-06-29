@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 // import { Form, Input } from 'antd';
 import Form from '../../common/Form';
 import Input from '../../common/Form/Input';
@@ -9,14 +10,10 @@ const RegistrationPage = () => (
     <div className={style['section-reg__wrapper']}>
       <div className={style['section-reg__window']}>
         <h3>Hello, world!</h3>
-        <span>Создайте аккаунт</span>
+        <span className={style['section-reg__description']}>Создайте аккаунт</span>
         <div className={style['section-reg__control']}>
-          <button className={style['section-reg__btn-reg']} type="button">
-            Регистрация
-          </button>
-          <button className={style['section-reg__btn-auth']} type="button">
-            Авторизация
-          </button>
+          <Link to="/reg">Регистрация</Link>
+          <Link to="/auth">Авторизация</Link>
         </div>
         <Form>
           <Input title="Имя" id="1" placeholder=" " />
