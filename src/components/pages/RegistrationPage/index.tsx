@@ -16,11 +16,17 @@ const RegistrationPage = () => (
           <Link to="/auth">Авторизация</Link>
         </div>
         <Form>
-          <Input title="Имя" id="1" placeholder=" " />
-          <Input title="Фамилия" id="1" placeholder=" " />
-          <Input title="Email" id="1" placeholder=" " />
-          <Input title="Пароль" id="1" placeholder=" " type="password" />
-          <Input title="Повторите пароль" id="1" placeholder=" " type="password" />
+          {/* <Input title="Имя" id="name" value=" " setValue={} />
+          <Input title="Фамилия" id="lastname" value=" " setValue={} />
+          <Input title="Email" id="email" value=" " setValue={} />
+          <Input title="Пароль" id="password" type="password" value=" " setValue={} />
+          <Input
+            title="Повторите пароль"
+            id="repeatPassword"
+            type="password"
+            value=" "
+            setValue={}
+          /> */}
           <label className={style['section-reg__checkbox']} htmlFor="check">
             <input id="check" className={style.checkbox__input} type="checkbox" />
             <span className={style.checkbox__text}>

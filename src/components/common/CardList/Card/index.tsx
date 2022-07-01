@@ -1,33 +1,23 @@
 import { Link } from 'react-router-dom';
 import style from './Card.module.scss';
-import { data } from '../../../../helpers';
 
 type CardPropsType = {
-  imgSource: string;
-  category: string;
-  title: string;
-  description: string;
-  price: string;
-  date: string;
-  view: string;
   id: string;
+  category: string;
+  date: string;
+  title: string;
+  price: string;
+  view: string;
+  description: string;
+  image: string;
   // children: React.ReactNode;
 };
 
-const Card = ({
-  imgSource,
-  category,
-  title,
-  description,
-  price,
-  date,
-  view,
-  id,
-}: CardPropsType) => (
+const Card = ({ image, category, title, description, price, date, view, id }: CardPropsType) => (
   <li className={style.card}>
     <Link to={id} className={style.card__wrapper}>
       <div className={style.card__photo}>
-        <img src={imgSource} alt="card-img" />
+        <img src={image} alt="card-img" />
         <span className={style.card__category}>{category}</span>
       </div>
       <div className={style.card__info}>

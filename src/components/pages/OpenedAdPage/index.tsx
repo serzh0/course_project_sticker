@@ -1,7 +1,6 @@
 import classNames from 'classnames';
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
-import OpenedAdComponent from '../../common/OpenedAdComponent';
 import style from './OpenedAdPage.module.scss';
 
 type OpenedAdPagePropsType = {
@@ -22,10 +21,14 @@ type OpenedAdPagePropsType = {
 };
 
 const OpenedAdPage = ({ adInfo }: OpenedAdPagePropsType) => {
-  console.log(adInfo);
   const navigate = useNavigate();
   const toBack = () => {
     navigate(-1);
+  };
+  const [numberVisible, setNumberVisible] = useState(false);
+
+  const showNumber = () => {
+    setNumberVisible((prev) => !prev);
   };
 
   return (
@@ -96,9 +99,17 @@ const OpenedAdPage = ({ adInfo }: OpenedAdPagePropsType) => {
           <div className={style['section-ad__price']}>
             <span>{adInfo?.price}</span>
           </div>
-          <button className={style['section-ad__get-number']} type="button">
-            Показать номер
-          </button>
+          <div className={style['section-ad__wrapper-number']}>
+            <button onClick={showNumber} className={style['section-ad__get-number']} type="button">
+              Показать номер
+            </button>
+            {numberVisible && (
+              <a href={`tel:${adInfo?.phoneNumber}`} className={style['section-ad__phone-number']}>
+                {adInfo?.phoneNumber}
+              </a>
+            )}
+          </div>
+
           {/* {phoneNumber} */}
           <div className={style['section-ad__other-ads']}>
             <h3 className={style['other-ads__title']}>Смотрите также:</h3>

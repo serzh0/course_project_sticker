@@ -19,7 +19,7 @@ const GetPasswordPage = () => (
           </div>
         </div>
         <Form>
-          <Input title="Email" id="1" placeholder=" " />
+          {/* <Input title="Email" id="email" value=" " setValue={} /> */}
           <button className={style['section-password__submit']} type="submit">
             Выслать ссылку
           </button>
