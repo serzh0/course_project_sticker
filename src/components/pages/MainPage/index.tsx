@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import style from './MainPage.module.scss';
 import ButtonContent from '../../common/Buttons/ButtonContent';
-import Card from '../../common/CardList/Card';
+// import Card from '../../common/CardList/Card';
 import CardList from '../../common/CardList';
 import { data } from '../../../helpers';
 

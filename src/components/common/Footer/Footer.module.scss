@@ -5,7 +5,7 @@
 .page-footer {
   padding: 50px 0;
   background: $lightgray-color;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   &__wrapper {
     display: flex;
     justify-content: space-between;
@@ -38,6 +38,13 @@
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+/* table  */
+@media screen and (max-width: 1000px) {
+  .page-footer {
+    margin-bottom: 0px;
+  }
 }
 
 /* mobile (320px)*/

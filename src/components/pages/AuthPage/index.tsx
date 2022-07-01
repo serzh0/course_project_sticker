@@ -12,7 +12,7 @@ const AuthPage = () => {
   const [password, setPassword] = useState('');
   const [hasError, setHasError] = useState(false);
   const submitHandler = () => {
-    if (password.length > 8 && email.length > 6) {
+    if (password.length >= 8) {
       setHasError(false);
       console.log({ userInfo: email, password });
     } else {
@@ -21,12 +21,12 @@ const AuthPage = () => {
     }
   };
   useEffect(() => {
-    if (email.length > 6 && password.length > 10) {
+    if (password.length >= 8) {
       setHasError(false);
-    } else if (email.length > 0 && password.length > 0) {
+    } else if (password.length > 0) {
       setHasError(true);
     }
-  }, [email, password]);
+  }, [password]);
 
   return (
     <section className={classNames(style['page-section'], style['section-auth'])}>
@@ -40,11 +40,6 @@ const AuthPage = () => {
           </div>
           <Form>
             <Input title="Email" id="email" value={email} setValue={setEmail} />
-            {email && hasError && (
-              <div className={style['section-auth__hasError']}>
-                <span>Email должен быть больше 6 символов</span>
-              </div>
-            )}
             <Input
               title="Пароль"
               id="password"
@@ -52,7 +47,7 @@ const AuthPage = () => {
               value={password}
               setValue={setPassword}
             />
-            {password && hasError && (
+            {hasError && (
               <div className={style['section-auth__hasError']}>
                 <span>Пароль должен быть больше 8 символов</span>
               </div>

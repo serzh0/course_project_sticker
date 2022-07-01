@@ -6,3 +6,20 @@
   padding: 0;
   list-style: none;
 }
+
+
+/* table  */
+@media screen and (max-width: 1000px) {
+  .card-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+
+/* mobile (320px)*/
+@media screen and (max-width: 450px) {
+  .card-list {
+    grid-template-columns: 1fr;
+  }
+ }
