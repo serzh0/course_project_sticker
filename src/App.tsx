@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import OpenedAdContainer from './containers/OpenedAdContainer';
 import GetPasswordContainer from './containers/GetPasswordContainer';
 import ProfileAdsContainer from './containers/ProfileAdsContainer';

@@ -6,7 +6,7 @@ import style from './Header.module.scss';
 
 const Header = () => (
   <header className={style['page-header']}>
-    <div className={classNames(style['page-header__menu'], 'container')}>
+    <div className={classNames(style['page-header__wrapper'], 'container')}>
       <Link to="/">
         <img src="images/logo.svg" alt="logo" />
       </Link>
@@ -14,9 +14,14 @@ const Header = () => (
       <Link to="/profile-ads" className={style['add-ad']}>
         Подать объявление
       </Link>
-      <div className={style['page-header__login']}>
-        <img src="images/login.svg" alt="login" />
-        <Link to="/auth">Войти</Link>
+      <div className={style['page-header__menu-wrapper']}>
+        <Link to="/auth" className={style['page-header__login']}>
+          <img src="images/login.svg" alt="login" />
+          <span>Войти</span>
+        </Link>
+        <button className={style['page-header__menu']} type="button">
+          <img src="images/header-menu.svg" alt="menu" />
+        </button>
       </div>
     </div>
   </header>

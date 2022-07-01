@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    & a {
+    & .page-footer__title, & a {
       color:$gray-color;
       display: flex;
     }
@@ -39,3 +39,25 @@
   padding: 0;
   display: flex;
 }
+
+/* mobile (320px)*/
+@media screen and (max-width: 450px) {
+  .page-footer {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    position: relative;
+
+  }
+  .page-footer__logo a:last-child, .page-footer__line {
+    display: none;
+  }
+  .social-list__item a{
+    margin-right: 8px;
+  }
+
+  .page-footer__copyright {
+    position: absolute;
+    left: calc(50% - 242px/2);
+    bottom: 24px;
+  }
+ }

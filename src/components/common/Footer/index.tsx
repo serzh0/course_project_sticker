@@ -9,8 +9,10 @@ const Footer = () => (
           <Link to="/">
             <img src="images/logo.svg" alt="logo" />
           </Link>
-          <div />
-          <Link to="/">Доска объявлений</Link>
+          <div className={style['page-footer__line']} />
+          <Link to="/" className={style['page-footer__title']}>
+            Доска объявлений
+          </Link>
         </div>
         <a className={style['page-footer__copyright']} href="#!">
           © ООО «Доска диджитал», 2022

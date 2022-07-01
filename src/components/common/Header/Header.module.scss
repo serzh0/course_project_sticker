@@ -1,20 +1,27 @@
 @import '../../../assets/styles/vars.scss';
 
 .page-header {
-  &__menu {
+  &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100%;
-    padding: 18px 0;
+    padding: 18px 20px;
   }
   &__login {
     display: flex;
-    & a {
-      padding: 8px 0 8px 8px;
-      font-size: 14px;
-      color: $darkgray-color;
+    align-items: center;
+    font-size: 14px;
+    color: $darkgray-color;
+    & img {
+      margin-right: 8px;
     }
+  }
+  &__menu-wrapper {
+    display: flex;
+  }
+  &__menu {
+    display: none;
   }
 }  
 
@@ -25,4 +32,25 @@
   font-weight: 500;
   background: $orange-color;
   border-radius: 4px;
+}
+
+/* table  */
+@media screen and (max-width: 1000px) {
+  .add-ad {
+    padding: 10px 20px;
+  }
+  .page-header__menu {
+    display: block;
+  }
+  .page-header__login span {
+    display: none;
+  }
+}
+
+/* mobile (320px)*/
+@media screen and (max-width: 450px) {
+ .add-ad {
+  display: none;
+ } 
+
 }

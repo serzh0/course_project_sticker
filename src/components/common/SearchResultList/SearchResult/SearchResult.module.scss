@@ -17,3 +17,15 @@
     color: $gray-color;
   }
 }
+
+/* table  */
+@media screen and (max-width: 1000px) {
+  .result-item {
+    width: 100%;
+  }
+}
+
+/* mobile (320px)*/
+@media screen and (max-width: 450px) {
+  
+}
