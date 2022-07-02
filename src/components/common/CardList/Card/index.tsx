@@ -10,7 +10,6 @@ type CardPropsType = {
   view: string;
   description: string;
   image: string;
-  // children: React.ReactNode;
 };
 
 const Card = ({ image, category, title, description, price, date, view, id }: CardPropsType) => (

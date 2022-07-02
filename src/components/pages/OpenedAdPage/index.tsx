@@ -110,7 +110,6 @@ const OpenedAdPage = ({ adInfo }: OpenedAdPagePropsType) => {
             )}
           </div>
 
-          {/* {phoneNumber} */}
           <div className={style['section-ad__other-ads']}>
             <h3 className={style['other-ads__title']}>Смотрите также:</h3>
             <ul className={style['other-ads__list']}>
